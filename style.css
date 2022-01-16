@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg);
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00fff8 !important;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background-color: var(--card-bg);
+    margin: 70px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.inner-content {
+    max-width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info {
+    margin: 0 2%;
+}
+
+.inner-content > .main-info > a {
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.inner-content > .main-info > p {
+    opacity: 0.6;
+    margin: 15px auto;
+}
+
+
+.nft {
+    width: 265px;
+    margin: 1em auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    background-color: rgba(0, 255, 248, 0);
+    width: 265px;
+    height: 265px;
+    border-radius: 10px;
+    transform: translateY(-106%);
+    position: absolute;
+}
+
+.overlay > img {
+    transform: translate(225%, 225%);
+    opacity: 1;
+}
+
+.overlay:hover {
+    background-color: rgba(0, 255, 248, 0.4);
+    opacity: 1;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+}
+
+.price {
+    display: flex;
+    width: 50%;
+    color: #00fff8;
+}
+
+.time {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    color: #8bacd9;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.owner {
+    border-top: 2px solid var(--line);
+    display: flex;
+    margin: 20px 0;
+    padding: 15px 0;
+}
+
+.avatar {
+    max-width: 40px;
+    border: 1px var(--white) solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.owner > p {
+    margin: auto 3px;
+    opacity: 0.6;
+    color: var(--white);
+}
+
+.owner > a {
+    margin: auto 3px;
+    color: var(--white);
+    opacity: 1;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
